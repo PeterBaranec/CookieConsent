@@ -89,6 +89,7 @@ Challenge:
     position: fixed;
     inset: 0;
     margin: auto;
+    display: none;
 
     height: 420px;
     width: 350px;
