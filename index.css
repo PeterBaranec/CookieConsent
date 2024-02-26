@@ -77,15 +77,6 @@ main {
 /* modal */
 
 .modal {
-
-    /*
-Challenge:
-1. Make the modal sit on top of the other content. 
-2. Make sure it is centrally aligned both horizontally
-   and vertically (just like in the slide).
-3. When it's positioned correctly, set its display 
-   property to 'none'.
-*/
     position: fixed;
     inset: 0;
     margin: auto;
@@ -140,6 +131,10 @@ Challenge:
     padding: 8px 16px;
     display: flex;
     justify-content: center;
+}
+
+.modal-choice-btns-reverse {
+    flex-direction: row-reverse;
 }
 
 .modal-btn {

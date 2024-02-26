@@ -3,6 +3,8 @@ let modal = document.getElementById("modal");
 const closeBtn = document.getElementById("modal-close-btn");
 const cookieForm = document.getElementById("cookie-form");
 const modalText = document.getElementById("modal-text");
+const choiceBtns = document.getElementById("modal-choice-btns");
+const declineBtn = document.getElementById("decline-btn");
 
 setTimeout(function () {
   modal.style.display = "inline";
@@ -10,6 +12,10 @@ setTimeout(function () {
 
 closeBtn.addEventListener("click", function () {
   modal.style.display = "none";
+});
+
+declineBtn.addEventListener("mouseenter", function () {
+  choiceBtns.classList.toggle("modal-choice-btns-reverse");
 });
 
 cookieForm.addEventListener("submit", function (e) {
