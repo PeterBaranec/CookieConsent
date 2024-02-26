@@ -14,8 +14,9 @@ closeBtn.addEventListener("click", function () {
 cookieForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const consentFormData = new FormData(consentForm);
-  console.log(consentFormData);
+  const consentFormData = new FormData(cookieForm);
+  const name = consentFormData.get("fullName");
+  console.log(name);
 
   modalText.innerHTML = `<div class="modal-inner-loading">
   <img src="images/loading.svg" class="loading">
